@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.wrapper {
+  max-width: 1920px;
+  overflow: hidden;
+  min-width: 100%;
+  position: relative;
+  background: #FFFFFF;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.block {
+  max-width: 1230px;
+}
+
+.header {
+  padding: 20px 0px 20px -38px;
+  height: 92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.header__row {
+  margin-left: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 0px 41px;
+  width: 447px;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+.header__label {
+  font-family: "Ubuntu";
+  font-size: 16px;
+  line-height: 160%;
+  font-weight: 700;
+  font-style: normal;
+  color: #424551;
+  text-align: left;
+}
+.header__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 48px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 421px;
+  margin-left: 9.375vw;
+}
+.header__aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-width: 175px;
+  margin-right: 38px;
+}
+.header__description {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 150%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: #424551;
+}
+.header__contacts {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 400;
+  text-align: center;
+  color: #424551;
+}
+.header__contactlogo {
+  margin-right: 20px;
+}
+
+.about {
+  width: auto;
+  height: 988px;
+  background: url("../images/slider-bg.png") 50% 50%/cover no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 32px;
+}
+.about__row {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 724px;
+          flex: 0 1 724px;
+}
+.about__label {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  letter-spacing: 1px;
+  line-height: 130%;
+  text-align: left;
+  vertical-align: top;
+  color: #FFFFFF;
+}
+.about__text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  vertical-align: top;
+  color: #FFFFFF;
+  margin-bottom: 69px;
+}
+.about__learn {
+  display: inline-block;
+  width: 278px;
+  height: 52px;
+  border: solid 1px #FFFFFF;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 52px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-right: 24px;
+}
+.about__submit {
+  display: inline-block;
+  width: 224px;
+  height: 52px;
+  background-color: #FF5A30;
+  border-radius: 4px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 52px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.about__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-right: -4px;
+  margin-top: 179px;
+}
+.about__slide {
+  width: 178px;
+  height: 54px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 2px;
+  margin-right: 4px;
+  padding-top: 11px;
+}
+.about__slide_active {
+  border-bottom: 2px solid #FFFFFF;
+}
+.about__number {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+}
+.about__number_active {
+  color: #FFFFFF;
+}
+.about__arrow {
+  border-radius: 50%;
+  cursor: pointer;
+}
+.about__arrow circle {
+  opacity: 0.5;
+}
+.about__arrow:hover circle {
+  opacity: 1;
+}
+
+.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 120px;
+}
+.label {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 46px;
+  line-height: 130%;
+  text-align: center;
+  font-weight: 700;
+  color: #1E212C;
+}
