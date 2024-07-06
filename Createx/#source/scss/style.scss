@@ -24,6 +24,10 @@
    margin-right: auto;
    margin-left: auto;
    
+   &__logo {
+      cursor: pointer;
+   }
+
    &__row {
       margin-left: 60px;
       display: flex;
@@ -33,6 +37,10 @@
       height: 50px;
       justify-content: center;
       flex: 1 0 auto;
+   }
+
+   &__column {
+      cursor: pointer;
    }
 
    &__label {
@@ -135,6 +143,13 @@
       text-align: center;
       color: #FFFFFF;
       margin-right: 24px;
+      transition: box-shadow 0.4s;
+      &:active {
+         background-color: rgba($color: #000000, $alpha: 0.1);
+      }
+      &:hover {
+         box-shadow: -5px 6px 15px #424551;
+      }
    }
    
    &__submit {
@@ -150,6 +165,13 @@
       line-height: 52px;
       text-align: center;
       color: #FFFFFF;
+      transition: box-shadow 0.4s;
+      &:active {
+         background-color: color-mix(in oklab, #FF5A30, #000000 20%);
+      }
+      &:hover {
+         box-shadow: -5px 6px 15px #424551;
+      }
    }
 
    &__slider {
@@ -234,11 +256,13 @@
       align-self: center;
       margin-right: auto;
       margin-left: calc(1230px / 2 - 112px);
+      cursor: pointer;
    }
 
    &__volume {
       align-self: flex-end;
       margin: 0 0 32px 32px;
+      cursor: pointer;
    }
 }
 
@@ -259,4 +283,95 @@
    text-align: center;
    color: #787A80;
    vertical-align: top;
+}
+
+.values {
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 1231px;
+   margin-bottom: 120px;
+   &__header {
+      margin-bottom: 24px;
+   }
+
+   &__label {
+      line-height: 130%;
+   }
+
+   &__text {
+      margin-bottom: 60px;
+   }
+
+   &__row {
+      display: flex;
+      gap: 0 94px;
+      max-width: 1231px;
+   }
+
+   &__column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   &__icon {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 24px;
+   }
+
+   &__title {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 150%;
+      text-align: center;
+      color: #1E212C;
+      margin-bottom: 8px;
+   }
+
+   &__description {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 160%;
+      text-align: center;
+      vertical-align: top;
+      color: #787A80;
+   }
+}
+
+.question {
+   
+   &__header {
+
+   }
+
+   &__form {
+
+   }
+
+   &__row {
+      
+   }
+
+   &__column {
+
+   }
+
+   &__label {
+
+   }
+
+   &__input {
+
+   }
+
+   &__send {
+
+   }
+
+   &__button {
+
+   }
 }
